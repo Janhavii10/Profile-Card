@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .profile-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 550px;
+        width: 100%;
+        background-color: rgb(249, 195, 215);
+        border-radius: 50px;
+        padding: 25px;
+        box-shadow: 0 15px 100px rgb(76, 179, 220);
+
+    }
+
+    .image {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 2500px;
+        margin-bottom: 20px;
+    }
+
+    .image .profile {
+        height: 100%;
+        width: 100%;
+        border: 5px solid rgb(249, 249, 144);
+        border-radius: 90%;
+    }
+
+    body {
+        height: 100vh;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-card .data {
+        display: flex;
+        text-align: center;
+        color: rgb(116, 10, 143);
+    }
+
+    .c {
+        list-style-type: none;
+    }
+
+    .name {
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    .job {
+        font-size: 40px;
+
+        font-family: 'Open Sans', sans-serif;
+
+
+    }
+
+    .profile-card .media-buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .media-buttons .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(49, 50, 8);
+        color: aliceblue;
+        font-size: 20px;
+        margin: 0px 20px;
+        height: 45px;
+        width: 50px;
+        border-radius: 25px;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .button:hover {
+        background-color: rgb(81, 1, 85);
+    }
+
+
+
+    .button {
+        padding: 6px 16px;
+        margin: 0px 13px;
+        background-color: rgb(212, 9, 158);
+        border-radius: 25px;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+
+    .info {
+        margin-top: 10px;
+        color: rgb(116, 10, 143);
+    }
+
+    .class {
+        font-family: 'Dancing Script', cursive;
+
+        display: block;
+        list-style-type: square;
+        font-size: 30px;
+        padding-left: 0px 20px;
+    }
+</style>
+
+
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="pic.jpeg"
+                alt="image cannot be loaded" class="profile">
+        </div>
+        <div class="data">
+            <ul class="c">
+                <li class="name">Janhavi Paul</li>
+                <li class="job">Student</li>
+            </ul>
+        </div>
+        <div class="media-buttons">
+            <a href="https://www.linkedin.com/in/janhavi-paul-802996228/" target="_blank"
+                style="background: rgb(76, 163, 206);" class="link">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Janhavii10" target="_blank" style="background: black;" class="link">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+                style="background: rgb(226, 94, 6);" class="link">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+        <div class="buttons">
+            <a href="https://drive.google.com/file/d/1xQ8zhrFF-t1PYA8OZX8P0smnDQUNHUKQ/view?usp=drivesdk"
+                target="_blank">
+                <button class="button">Resume</button></a>
+            <button class="button">Contact</button>
+        </div>
+        <div class="info">
+            <ul class="class">
+                <li>1* at Codechef</li>
+                <li>Participated in SIH</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- --> 
